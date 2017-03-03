@@ -120,7 +120,7 @@
                 <tr ng-repeat="row in grid track by $index">
                     <td ng-repeat="box in row track by $index">
                         <div class='box' ng-if="box.shown != true">
-                            <div ng-if="box.flagged == true">
+                            <div class='flagged' ng-if="box.val == 'x'">
                             </div>
                         </div>
                         <div class='box' ng-if="box.shown == true">
